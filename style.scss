@@ -54,17 +54,37 @@ body {
 }
 
 .difficulty {
-    width: 98px;
-    height: 98px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    font-Weight: 400;
-    font-Size: 64px;
-    line-height: 72px;
-    border-radius: 12px;
-    color: #0080C1;
+    & input[type=radio] {
+        display: none;
+
+        &:checked + label {
+            background: #0080C1;
+            color: #FFFFFF;
+        }
+    }
+
+    & label {
+        width: 98px;
+        height: 98px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        font-Weight: 400;
+        font-Size: 64px;
+        line-height: 72px;
+        border-radius: 12px;
+        border: 2px;
+        color: #0080C1;
+        position: relative;
+        transition: all .5s;
+    
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 12px #004980;
+        }
+    }
+
 }
 
 .button {
@@ -77,4 +97,10 @@ body {
     border-radius: 12px;
     color: #FFFFFF;
     border-style: none;
+    position: relative;
+    transition: all .5s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
 }

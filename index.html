@@ -9,12 +9,22 @@
 <body>
     <section class="main-box center">
         <h1 class="title">Выбери сложность</h1>
-        <div class="difficulty-box">
-            <div class="difficulty">1</div>
-            <div class="difficulty">2</div>
-            <div class="difficulty">3</div>
-        </div>
-        <button class="button">Старт</button>
+        <form action="#" class="difficulty-box">
+            <div class="difficulty">
+                <input type="radio" id="radio-1" name="radio" value="1" checked/>
+                <label for="radio-1">1</label>
+            </div>
+            <div class="difficulty">
+                <input type="radio" id="radio-2" name="radio" value="2"/>
+                <label for="radio-2">2</label>
+            </div>
+            <div class="difficulty">
+                <input type="radio" id="radio-3" name="radio" value="3"/>
+                <label for="radio-3">3</label>
+            </div>
+            
+        </form>
+        <button type="submit" class="button">Старт</button>
     </section>
 </body>
 </html>

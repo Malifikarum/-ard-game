@@ -52,7 +52,14 @@ body {
   margin-bottom: 67px;
 }
 
-.difficulty {
+.difficulty input[type=radio] {
+  display: none;
+}
+.difficulty input[type=radio]:checked + label {
+  background: #0080C1;
+  color: #FFFFFF;
+}
+.difficulty label {
   width: 98px;
   height: 98px;
   display: flex;
@@ -63,7 +70,14 @@ body {
   font-Size: 64px;
   line-height: 72px;
   border-radius: 12px;
+  border: 2px;
   color: #0080C1;
+  position: relative;
+  transition: all 0.5s;
+}
+.difficulty label:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #004980;
 }
 
 .button {
@@ -76,4 +90,9 @@ body {
   border-radius: 12px;
   color: #FFFFFF;
   border-style: none;
+  position: relative;
+  transition: all 0.5s;
+}
+.button:hover {
+  transform: scale(1.05);
 }/*# sourceMappingURL=style.css.map */
