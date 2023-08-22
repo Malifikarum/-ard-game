@@ -58,8 +58,11 @@ body {
         display: none;
 
         &:checked + label {
+            border: 2px solid #009fee;
+            box-shadow: 0 0 8px #00aaff;
             background: #0080C1;
             color: #FFFFFF;
+            transform: translate(0, -5px);
         }
     }
 
