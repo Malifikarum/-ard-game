@@ -3,15 +3,23 @@
         "browser": true,
         "es6": true,
         "node": true
-    },
-    "extends":["eslint: recommended", "prettier"],
-    "plugins": ["prettier"],
-    "parserOptions": {
+      },
+      "extends": ["eslint:recommended", "prettier"],
+      "plugins": [
+        "prettier"
+      ],
+      "parserOptions": {
+        "sourceType": "module",
         "ecmaVersion": 2020
-    },
-    "rules": {
+      },
+      "rules": {
         "prettier/prettier": "error",
-        "camelcase": ["error"],
-        "eqeqeq": ["error", "always"] 
+        "camelcase": [
+          "error"
+        ],
+        "eqeqeq": [
+          "error",
+          "always"
+        ]
     }
 }

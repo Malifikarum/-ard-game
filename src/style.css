@@ -18,7 +18,6 @@ body {
   width: 480px;
   height: 459px;
   display: flex;
-  display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 12px;
@@ -52,16 +51,6 @@ body {
   margin-bottom: 67px;
 }
 
-.difficulty input[type=radio] {
-  display: none;
-}
-.difficulty input[type=radio]:checked + label {
-  border: 2px solid #009fee;
-  box-shadow: 0 0 8px #00aaff;
-  background: #0080c1;
-  color: #ffffff;
-  transform: translate(0, -5px);
-}
 .difficulty label {
   width: 98px;
   height: 98px;
@@ -81,6 +70,16 @@ body {
 .difficulty label:hover {
   transform: scale(1.05);
   box-shadow: 0 0 12px #004980;
+}
+.difficulty input[type=radio] {
+  display: none;
+}
+.difficulty input[type=radio]:checked + label {
+  border: 2px solid #009fee;
+  box-shadow: 0 0 8px #00aaff;
+  background: #0080c1;
+  color: #ffffff;
+  transform: translate(0, -5px);
 }
 
 .button {

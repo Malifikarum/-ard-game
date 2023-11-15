@@ -46,10 +46,6 @@ export const goToPage = (page) => {
   }
 };
 
-const add_add = () => {
-  "";
-};
-
 export const renderApp = () => {
   const appEl = document.getElementById("app");
   if (page === EASY_PAGE) {
