@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "StratosSkyeng";
+  src: url("/fonts/Desktop fonts/stratosskyeng-regular.otf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #004980;
+  font-family: StratosSkyeng;
+}
+
+.main-box {
+  background-color: #c2f5ff;
+  width: 480px;
+  height: 459px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  padding-top: 52px;
+}
+
+.center {
+  margin-left: calc(50% - 240px);
+  margin-right: calc(50% - 240px);
+  margin-top: calc(50vh - 230px);
+  margin-bottom: calc(50vh - 230px);
+}
+
+.title {
+  width: 208px;
+  height: 96px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #004980;
+  margin-bottom: 48px;
+}
+
+.difficulty-box {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 12px;
+  margin-bottom: 67px;
+}
+
+.difficulty label {
+  width: 98px;
+  height: 98px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
+  border-radius: 12px;
+  border: 2px;
+  color: #0080c1;
+  position: relative;
+  transition: all 0.5s;
+}
+.difficulty label:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #004980;
+}
+.difficulty input[type=radio] {
+  display: none;
+}
+.difficulty input[type=radio]:checked + label {
+  border: 2px solid #009fee;
+  box-shadow: 0 0 8px #00aaff;
+  background: #0080c1;
+  color: #ffffff;
+  transform: translate(0, -5px);
+}
+
+.button {
+  background-color: #7ac100;
+  width: 246px;
+  height: 50px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  border-radius: 12px;
+  color: #ffffff;
+  border-style: none;
+  position: relative;
+  transition: all 0.5s;
+}
+.button:hover {
+  transform: scale(1.05);
+}/*# sourceMappingURL=style.css.map */
